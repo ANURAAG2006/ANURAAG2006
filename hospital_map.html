@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e9ae90126aa71bcb7159e0f0c81b2de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e9ae90126aa71bcb7159e0f0c81b2de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2e9ae90126aa71bcb7159e0f0c81b2de = L.map(
+                "map_2e9ae90126aa71bcb7159e0f0c81b2de",
+                {
+                    center: [11.341, 77.7121],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_22a6d200dcb9f3927de2d6d1b26ed5f7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_22a6d200dcb9f3927de2d6d1b26ed5f7.addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var marker_49bebabb7828b354831fb242515c5dac = L.marker(
+                [11.341, 77.7121],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_8012263d160955dccc5c3c6205155d18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_49bebabb7828b354831fb242515c5dac.setIcon(icon_8012263d160955dccc5c3c6205155d18);
+        
+    
+        var popup_3e9144837de98bbe5d242db2d06dd62b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42e1784da27b48f5905d59b134bbf1e7 = $(`<div id="html_42e1784da27b48f5905d59b134bbf1e7" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_3e9144837de98bbe5d242db2d06dd62b.setContent(html_42e1784da27b48f5905d59b134bbf1e7);
+            
+        
+
+        marker_49bebabb7828b354831fb242515c5dac.bindPopup(popup_3e9144837de98bbe5d242db2d06dd62b)
+        ;
+
+        
+    
+    
+            var marker_9ad48bc23089854739e65882501b8127 = L.marker(
+                [11.3418385, 77.7132218],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_4a38ef5e20594641d73aabd568e5d129 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ad48bc23089854739e65882501b8127.setIcon(icon_4a38ef5e20594641d73aabd568e5d129);
+        
+    
+        var popup_1ecfced036bb31233a1075d10e90ac4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bd7b14b2bd4a456bf7d3a0afe9d0501 = $(`<div id="html_8bd7b14b2bd4a456bf7d3a0afe9d0501" style="width: 100.0%; height: 100.0%;">Vanjee Multispecality Dental Centre - 153.62 meters away</div>`)[0];
+                popup_1ecfced036bb31233a1075d10e90ac4a.setContent(html_8bd7b14b2bd4a456bf7d3a0afe9d0501);
+            
+        
+
+        marker_9ad48bc23089854739e65882501b8127.bindPopup(popup_1ecfced036bb31233a1075d10e90ac4a)
+        ;
+
+        
+    
+    
+            var marker_89b1f99f9c6829a0c602d3995b5f0256 = L.marker(
+                [11.3397231, 77.7130655],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_795c456bcf8bde8525d874e7265b47f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_89b1f99f9c6829a0c602d3995b5f0256.setIcon(icon_795c456bcf8bde8525d874e7265b47f0);
+        
+    
+        var popup_a2a2ce6f56db3ade983c6977f92148cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_958e107f630aa29bafe65e8a68fbed0f = $(`<div id="html_958e107f630aa29bafe65e8a68fbed0f" style="width: 100.0%; height: 100.0%;">Arc Fertility Hospital - 176.23 meters away</div>`)[0];
+                popup_a2a2ce6f56db3ade983c6977f92148cf.setContent(html_958e107f630aa29bafe65e8a68fbed0f);
+            
+        
+
+        marker_89b1f99f9c6829a0c602d3995b5f0256.bindPopup(popup_a2a2ce6f56db3ade983c6977f92148cf)
+        ;
+
+        
+    
+    
+            var marker_01562ab856363bee50ef956396ff95e1 = L.marker(
+                [11.3399422, 77.7134188],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_6a1b539f370715d32bdc2a650b5789ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01562ab856363bee50ef956396ff95e1.setIcon(icon_6a1b539f370715d32bdc2a650b5789ad);
+        
+    
+        var popup_ccf57ee9f0caa0b42cf181f1ae8c2299 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15a030c1df9b0f60f17377733374109f = $(`<div id="html_15a030c1df9b0f60f17377733374109f" style="width: 100.0%; height: 100.0%;">Erode Trust Hospital - 185.52 meters away</div>`)[0];
+                popup_ccf57ee9f0caa0b42cf181f1ae8c2299.setContent(html_15a030c1df9b0f60f17377733374109f);
+            
+        
+
+        marker_01562ab856363bee50ef956396ff95e1.bindPopup(popup_ccf57ee9f0caa0b42cf181f1ae8c2299)
+        ;
+
+        
+    
+    
+            var marker_e0cde8706d2a5f7ed76f8ff1c0655ae9 = L.marker(
+                [11.3392651, 77.7126583],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_65378c3979a6036da3c1d4854237de15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0cde8706d2a5f7ed76f8ff1c0655ae9.setIcon(icon_65378c3979a6036da3c1d4854237de15);
+        
+    
+        var popup_f06208911f72eda5130f0a2552d6907c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5daa9e83892f0d06faea98f43ecac394 = $(`<div id="html_5daa9e83892f0d06faea98f43ecac394" style="width: 100.0%; height: 100.0%;">Sri Athi Sathya Hospital - 201.35 meters away</div>`)[0];
+                popup_f06208911f72eda5130f0a2552d6907c.setContent(html_5daa9e83892f0d06faea98f43ecac394);
+            
+        
+
+        marker_e0cde8706d2a5f7ed76f8ff1c0655ae9.bindPopup(popup_f06208911f72eda5130f0a2552d6907c)
+        ;
+
+        
+    
+    
+            var marker_d25d17b66e55d7da93ec345f1076e380 = L.marker(
+                [11.3384075, 77.7123677],
+                {
+}
+            ).addTo(map_2e9ae90126aa71bcb7159e0f0c81b2de);
+        
+    
+            var icon_cdbdc9949471e75ae8e5b1f672e0ddd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d25d17b66e55d7da93ec345f1076e380.setIcon(icon_cdbdc9949471e75ae8e5b1f672e0ddd0);
+        
+    
+        var popup_5233f9282aaec82b908fb361f1ffcdf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d0d296739606e5e85d1a18063030a0c = $(`<div id="html_9d0d296739606e5e85d1a18063030a0c" style="width: 100.0%; height: 100.0%;">Velavan Hospital - 288.26 meters away</div>`)[0];
+                popup_5233f9282aaec82b908fb361f1ffcdf6.setContent(html_9d0d296739606e5e85d1a18063030a0c);
+            
+        
+
+        marker_d25d17b66e55d7da93ec345f1076e380.bindPopup(popup_5233f9282aaec82b908fb361f1ffcdf6)
+        ;
+
+        
+    
+</script>
+</html>
